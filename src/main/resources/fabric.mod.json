@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "frogjockeys",
+  "version": "${version}",
+  "name": "FrogJockeys",
+  "description": "A mod that allows frogs to ride spiders and secrete special mucus. ",
+  "authors": [
+    "HyperPigeon"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/frogjockeys/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.hyper_pigeon.frogjockeys.client.FrogJockeysClient"
+    ],
+    "main": [
+      "net.hyper_pigeon.frogjockeys.FrogJockeys"
+    ]
+  },
+  "mixins": [
+    "frogjockeys.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.6",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
